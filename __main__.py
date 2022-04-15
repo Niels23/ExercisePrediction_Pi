@@ -24,7 +24,7 @@ def start_Observer():
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
-    if input("\nMove files from /raw_data to /old_data? [Y/N]\n") in ["y", "Y", "yes", "Yes", "ye", "Ye"]:
+    if input("\nMove files from /raw_data to /old_data? [Y/N]\n") in ["y", "Y", "ye", "Ye", "yes", "Yes"]:
         move_data(PATH)
         print("Data moved!")
 
